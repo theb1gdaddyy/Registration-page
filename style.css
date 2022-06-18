@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 350px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-side {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 0;
+  color: white;
+}
+
+.l-side h1 {
+  line-height: 1.2em;
+  margin-bottom: 2rem;
+}
+
+.l-side p {
+  margin-bottom: 8px;
+  padding: 0 0.25em;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+p,
+.cta {
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.r-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form button,
+.cta {
+  border-radius: 10px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.cta {
+  padding: 20px 60px;
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 15px;
+  border: none;
+  box-shadow: 0px 8px 0 0 rgba(104, 103, 103, 0.432);
+}
+
+.cta,
+button {
+  cursor: pointer;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+  box-shadow: 0px 8px 0 0 rgba(104, 103, 103, 0.432);
+}
+
+form input {
+  border-radius: 7px;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.486);
+}
+
+form button {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  margin: 5px 0 10px 0;
+}
+
+form p {
+  font-size: 11px;
+  line-height: 1.4rem;
+  padding-bottom: 10px;
+  opacity: 60%;
+  font-weight: 500;
+  
+}
+
+span a {
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+input:invalid {
+  background-image: url(/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+}
+
+input:valid ~ .error {
+  visibility: hidden;
+}
+
+.error {
+  font-size: 11px;
+  opacity: 70%;
+  font-weight: 600;
+  text-align: end;
+  font-style: italic;
+  color: hsl(0, 100%, 61%);
+}
+
+@media (max-width: 1440px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    font-size: 1rem;
+  }
+
+  .container {
+    max-width: 80%;
+    padding: 0 20px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .l-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    text-align: left;
+    color: white;
+    margin-right: 10px;
+  }
+
+  .l-side h1 {
+    line-height: 1.2em;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  .l-side p {
+    line-height: 1.5rem;
+    font-size: 1em;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .r-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  form button,
+  form input,
+  .cta {
+    border-radius: 10px;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .cta {
+    padding: 20px 50px;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 8px 5px 1px rgba(104, 103, 103, 0.432);
+  }
+
+  .cta,
+  button {
+    cursor: pointer;
+  }
+
+  form {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    box-shadow: 0px 8px 0 0 rgba(104, 103, 103, 0.432);
+  }
+
+  form input {
+    margin-bottom: 5px;
+    font-weight: 700;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+  }
+
+  form button {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  form p {
+    font-size: 11px;
+    padding: 0 2em;
+    opacity: 60%;
+    font-weight: 500;
+  }
+}
